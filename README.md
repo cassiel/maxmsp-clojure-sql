@@ -61,8 +61,8 @@ since they aren't centrally hosted. See the `README` for
 The Microsoft JDBC driver came from [here][ms-jdbc].
 
 This project was built and tested using [Leiningen][lein], which will fetch all
-dependencies except the Microsoft driver. We "injected" that into our
-local repository using this incantation:
+dependencies except the Microsoft driver and Max's `max.jar`. We
+"injected" the driver into our local repository using this incantation:
 
      mvn install:install-file \
          -Dfile=sqljdbc4.jar \
@@ -72,12 +72,16 @@ local repository using this incantation:
          -Dpackaging=jar \
          -DgeneratePom=true
 
-(This is where the `local.microsoft` prefix came from.) After a `lein
-deps`, the Clojure code can be exercised via a Slime connection in
-Emacs. (The main script relies on `max.jar`, which can be rolled in
-similarly to above - see the `net.loadbang.lib` docs - but you'll
-probably want to work in the other sources, and leave the top-level
-script alone; calls to things like `.outlet` aren't going to work.)
+(This is where the `local.microsoft` prefix came from.) The command for
+`max.jar` is similar - see the docs for [net.loadbang.lib][loadbang-lib]
+for details.
+
+After a `lein deps`, the Clojure code can be exercised via a Slime
+connection in Emacs. (The main script relies on `max.jar`, which can be
+rolled in similarly to above - see the `net.loadbang.lib` docs - but
+you'll probably want to work in the other sources, and leave the
+top-level script alone; calls to things like `.outlet` aren't going to
+work.)
 
 ## Credits
 
