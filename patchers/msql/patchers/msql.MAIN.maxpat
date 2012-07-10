@@ -9,7 +9,7 @@
 ,
 		"rect" : [ 355.0, 242.0, 646.0, 383.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Anonymous Pro",
@@ -86,7 +86,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 75.0, 125.0, 555.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 90.0, 555.0, 20.0 ]
+					"presentation_rect" : [ 15.0, 90.0, 615.0, 20.0 ]
 				}
 
 			}
@@ -102,7 +102,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 75.0, 100.0, 555.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 65.0, 555.0, 20.0 ]
+					"presentation_rect" : [ 15.0, 65.0, 615.0, 20.0 ]
 				}
 
 			}
@@ -118,7 +118,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 75.0, 75.0, 555.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 40.0, 555.0, 20.0 ]
+					"presentation_rect" : [ 15.0, 40.0, 615.0, 20.0 ]
 				}
 
 			}
@@ -134,7 +134,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 75.0, 50.0, 555.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 15.0, 555.0, 20.0 ]
+					"presentation_rect" : [ 15.0, 15.0, 615.0, 20.0 ]
 				}
 
 			}
