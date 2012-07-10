@@ -44,7 +44,10 @@ directory.
 Open the Max project file `msql.maxproj` (in `patchers/msql`).
 
 Use the Host, Username and Password buttons to configure a
-connection. Use Query to enter a complete SQL query.
+connection. Use Query to enter a complete SQL query. (the Password field
+will display the password in plain text while you type it; this is a
+weakness in Max's `dialog` object, and could be coded around with a bit
+of bespoke Max work.)
 
 Result rows are planted into the `jit.cellblock` object. The first row
 is the column names; these are sorted alphabetically. (This is because
