@@ -28,8 +28,10 @@
           or queries as token lists. Row 0 output is column names in Clojure
           keyword syntax."}
   [sql]
+  (clearall)
+  (.outlet max/maxObject 2 0)
   (let [{:keys [keys rows]} (sql/query @state sql)]
-    (clearall)
+    (.outlet max/maxObject 2 (count rows))
     (set-row 0 (map str keys))
     (doseq [[n row] (u/enumerate 1 rows)]
       (set-row n row))))

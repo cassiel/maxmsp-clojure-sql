@@ -1,0 +1,40 @@
+<project name="distribution" default="dist" basedir=".">
+  <description>
+    Build distribution for GitHub.
+  </description>
+
+  <property name="repo" location="${user.home}/.m2/repository" />
+
+  <target name="dist">
+    <mkdir dir="distribution" />
+
+    <zip destfile="distribution/distribution.zip">
+      <zipfileset dir="src" prefix="src" />
+      <zipfileset dir="patchers" prefix="patchers" />
+
+      <zipfileset dir="${repo}/net/loadbang/net.loadbang.clojure/1.2.0"
+                  includes="*.jar"
+      />
+
+      <zipfileset dir="${repo}/org/clojure/clojure/1.3.0"
+                  includes="*.jar"
+      />
+
+      <zipfileset dir="${repo}/org/clojure/java.jdbc/0.2.3"
+                  includes="*.jar"
+      />
+
+      <zipfileset dir="${repo}/local/microsoft/local.microsoft.sqljdbc4/4.0.2206.100"
+                  includes="*.jar"
+      />
+
+      <zipfileset dir="${repo}/net/loadbang/net.loadbang.lib/1.8.0"
+                  includes="*.jar"
+      />
+
+      <zipfileset dir="${repo}/net/loadbang/net.loadbang.scripting/1.1.0"
+                  includes="*.jar"
+      />
+    </zip>
+  </target>
+</project>

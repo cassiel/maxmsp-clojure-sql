@@ -185,7 +185,7 @@
 					"patching_rect" : [ 285.0, 315.0, 200.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 15.0, 105.0, 20.0 ],
-					"tabs" : [ "#1" ]
+					"tabs" : [ "#1..." ]
 				}
 
 			}
@@ -201,7 +201,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 495.0, 315.0, 75.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 135.0, 15.0, 300.0, 18.0 ],
+					"presentation_rect" : [ 135.0, 15.0, 510.0, 18.0 ],
 					"text" : "--"
 				}
 
