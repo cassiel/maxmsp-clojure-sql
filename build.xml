@@ -32,6 +32,10 @@
                   includes="*.jar"
       />
 
+      <zipfileset dir="${repo}/log4j/log4j/1.2.16"
+                  includes="*.jar"
+      />
+
       <zipfileset dir="${repo}/net/loadbang/net.loadbang.scripting/1.1.0"
                   includes="*.jar"
       />

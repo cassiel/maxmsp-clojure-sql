@@ -30,7 +30,7 @@ directory):
 - `clojure-1.3.0.jar`
 - `java.jdbc-0.2.3.jar`
 - `local.microsoft.sqljdbc4-4.0.2206.100.jar`
-- `log4j-1.2.12.jar`
+- `log4j-1.2.16.jar`
 - `net.loadbang.clojure-1.2.0.jar`
 - `net.loadbang.lib-1.8.0.jar`
 - `net.loadbang.scripting-1.1.0.jar`
